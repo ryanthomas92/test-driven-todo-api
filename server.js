@@ -61,6 +61,7 @@ app.post('/api/todos', function create(req, res) {
    */
    var newObj = req.body;
    newObj._id = todos[todos.length-1]._id++;
+
    res.json(newObj);
 
 });
